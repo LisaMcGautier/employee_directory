@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/LisaMcGautier/employee_directory/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/LisaMcGautier/employee_directory/static/js/main.3ae9d1f8.chunk.js",
+    "main.js.map": "/LisaMcGautier/employee_directory/static/js/main.3ae9d1f8.chunk.js.map",
+    "runtime-main.js": "/LisaMcGautier/employee_directory/static/js/runtime-main.405c08b3.js",
+    "runtime-main.js.map": "/LisaMcGautier/employee_directory/static/js/runtime-main.405c08b3.js.map",
+    "static/js/2.a23adb02.chunk.js": "/LisaMcGautier/employee_directory/static/js/2.a23adb02.chunk.js",
+    "static/js/2.a23adb02.chunk.js.map": "/LisaMcGautier/employee_directory/static/js/2.a23adb02.chunk.js.map",
+    "static/js/3.cc192dc1.chunk.js": "/LisaMcGautier/employee_directory/static/js/3.cc192dc1.chunk.js",
+    "static/js/3.cc192dc1.chunk.js.map": "/LisaMcGautier/employee_directory/static/js/3.cc192dc1.chunk.js.map",
+    "index.html": "/LisaMcGautier/employee_directory/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/LisaMcGautier/employee_directory/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.a23adb02.chunk.js.LICENSE.txt": "/LisaMcGautier/employee_directory/static/js/2.a23adb02.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/LisaMcGautier/employee_directory/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.405c08b3.js",
+    "static/js/2.a23adb02.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.3ae9d1f8.chunk.js"
+  ]
+}
