@@ -68,9 +68,9 @@ If you have any questions about the repo, open an issue or contact me directly a
 You can find more of my work at [GITHUBrepo]
 (https://github.com/lisamcgautier)
 
+__________________________________________________________________________
+
 ### Getting Started with Create React App
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
