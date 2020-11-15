@@ -53,7 +53,9 @@ class DirectoryContainer extends Component {
 
     const filteredList = this.state.employees.filter(employee => 
       employee.name.first.toLowerCase().includes(this.state.search.toLowerCase())
-      || employee.name.last.toLowerCase().includes(this.state.search.toLowerCase()));
+      || employee.name.last.toLowerCase().includes(this.state.search.toLowerCase())
+
+      || (employee.name.first.toLowerCase() + " " + employee.name.last.toLowerCase()).includes(this.state.search.toLowerCase()));
 
     this.setState({employees: filteredList});
   }
