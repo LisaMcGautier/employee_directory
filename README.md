@@ -65,7 +65,10 @@ N/A
 
 If you have any questions about the repo, open an issue or contact me directly at dlanodcm4517@gmail.com
 
-You can find more of my work at [GITHUBrepo](https://github.com/lisamcgautier)## Getting Started with Create React App
+You can find more of my work at [GITHUBrepo]
+(https://github.com/lisamcgautier)
+
+## Getting Started with Create React App
 
 
 
