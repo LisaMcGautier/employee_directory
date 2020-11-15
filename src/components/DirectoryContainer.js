@@ -40,29 +40,31 @@ class DirectoryContainer extends Component {
     console.log(event.target.value);
   };
 
-  // When the form is submitted, search the employees array for `this.state.search`
+  // When the form is submitted, pass the search value to the searchDirectory function
   handleFormSubmit = event => {
     event.preventDefault();
     this.searchDirectory(this.state.search);
   };
 
+  // the searchDirectory function will filter first and last names for the search value
   searchDirectory = event => {
+    console.log(`You searched for ${this.state.search}`);
 
+    const filteredList = this.state.employees.filter(employee => 
+      employee.name.first.includes(this.state.search)
+      || employee.name.last.includes(this.state.search));
+
+    this.setState({employees: filteredList});
   }
 
-  // sample method slice 
-  handleEmployeeSlice = () => {
+  // sort by LAST name
+  handleEmployeeSortLast = () => {
     const employees = this.state.employees;
-    this.setState({ employees: employees.slice(15) })
-  }
+    this.setState({
+      employees: employees.sort(function (a, b) {
 
-  // sample method sort 
-  handleEmployeeSort = () => {
-    const employees = this.state.employees;
-    this.setState({ employees: employees.sort(function (a, b) {
-
-        let nameA = a.name.last.toLowerCase();
-        let nameB = b.name.last.toLowerCase();
+        const nameA = a.name.last.toLowerCase();
+        const nameB = b.name.last.toLowerCase();
 
         if (nameA < nameB) {
           return -1;
@@ -76,15 +78,44 @@ class DirectoryContainer extends Component {
     })
   }
 
+  // sort by FIRST name
+  handleEmployeeSortFirst = () => {
+    const employees = this.state.employees;
+    this.setState({
+      employees: employees.sort(function (a, b) {
+
+        let nameA = a.name.first.toLowerCase();
+        let nameB = b.name.first.toLowerCase();
+
+        if (nameA < nameB) {
+          return -1;
+        }
+        else if (nameA > nameB) {
+          return 1;
+        } else {
+          return 0;
+        }
+      })
+    })
+  }
+
+  // sample method slice 
+  handleEmployeeSlice = () => {
+    const employees = this.state.employees;
+    this.setState({ employees: employees.slice(15) })
+  }
+
   render() {
     return (
       <div className="container">
 
         <Header />
 
-        <button className="btn btn-danger mt-3" onClick={this.handleEmployeeSlice}>Slice</button>
+        <button className="btn btn-primary m-3" onClick={this.handleEmployeeSortLast}>Sort by last name</button>
 
-        <button className="btn btn-warning mt-3" onClick={this.handleEmployeeSort}>Sort</button>
+        <button className="btn btn-success m-3" onClick={this.handleEmployeeSortFirst}>Sort by first name</button>
+
+        <button className="btn btn-dark m-3" onClick={this.handleEmployeeSlice}>Slice</button>
 
         <SearchForm
           search={this.state.search}

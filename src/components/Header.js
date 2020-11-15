@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => (
     <div>
-        <div className="jumbotron bg-info text-white" >
+        <div className="jumbotron bg-info text-white text-center" >
             <h1 className="display-4">Employee Directory</h1>
         </div>
 
