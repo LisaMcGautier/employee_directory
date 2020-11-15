@@ -6,13 +6,13 @@ const Header = () => (
             <h1 className="display-4">Employee Directory</h1>
         </div>
 
-        <p>
-            Nunc pharetra finibus est at efficitur. Praesent sed congue diam. Integer gravida dui mauris,
-            ut interdum nunc egestas sed. Aenean sed mollis diam. Nunc aliquet risus ac finibus porta. Nam
-            quis arcu non lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-            imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus in. Sed rhoncus mollis
-            diam, sit amet facilisis lectus blandit at.
-    </p>
+        <ul>
+            <li>Employee Directory returns a list of 50 employees, with images and contact information.</li>
+            <li>Sort employees by first name or last name at the click of a button.</li>
+            <li>Slice button returns a list of 25 employees.</li>
+            <li>Refresh the page to return a new list of 50 employees.</li> 
+        </ul>
+
     </div>
 );
 

@@ -2,8 +2,9 @@ import React, { Component } from "react";
 
 import API from "../utils/API";
 import Header from "./Header"
+// import Buttons from "./Buttons"
 import EmployeeTable from "./EmployeeTable";
-import SearchForm from "./SearchForm";
+import UIDashboard from "./UIDashboard";
 
 class DirectoryContainer extends Component {
   state = {
@@ -102,7 +103,7 @@ class DirectoryContainer extends Component {
   // sample method slice 
   handleEmployeeSlice = () => {
     const employees = this.state.employees;
-    this.setState({ employees: employees.slice(15) })
+    this.setState({ employees: employees.slice(25) })
   }
 
   render() {
@@ -111,16 +112,20 @@ class DirectoryContainer extends Component {
 
         <Header />
 
+        {/* <Buttons /> */}
+
         <button className="btn btn-primary m-3" onClick={this.handleEmployeeSortLast}>Sort by last name</button>
-
         <button className="btn btn-success m-3" onClick={this.handleEmployeeSortFirst}>Sort by first name</button>
+        <button className="btn btn-warning m-3" onClick={this.handleEmployeeSlice}>Slice</button>
 
-        <button className="btn btn-dark m-3" onClick={this.handleEmployeeSlice}>Slice</button>
-
-        <SearchForm
+        <UIDashboard
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
+
+          // handleEmployeeSortLast={this.handleEmployeeSortLast}
+          // handleEmployeeSortFirst={this.handleEmployeeSortFirst}
+          // handleEmployeeSlice={this.handleEmployeeSlice}
         />
 
         <EmployeeTable employees={this.state.employees} />

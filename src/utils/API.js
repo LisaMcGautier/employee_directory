@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Limit responses from the API to US nationality
 
-const BASEURL = "https://randomuser.me/api/?nat=US&results=30";
+const BASEURL = "https://randomuser.me/api/?nat=US&results=50";
 
 // Export an object with a "retrieve" method that calls the randomuser API 
 
