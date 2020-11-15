@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import API from "../utils/API";
+import Header from "./Header"
 import EmployeeTable from "./EmployeeTable";
 import SearchForm from "./SearchForm";
 
@@ -44,6 +45,7 @@ class DirectoryContainer extends Component {
     event.preventDefault();
     this.searchDirectory(this.state.search);
   };
+
   searchDirectory = event => {
 
   }
@@ -54,12 +56,35 @@ class DirectoryContainer extends Component {
     this.setState({ employees: employees.slice(15) })
   }
 
+  // sample method sort 
+  handleEmployeeSort = () => {
+    const employees = this.state.employees;
+    this.setState({ employees: employees.sort(function (a, b) {
 
+        let nameA = a.name.last.toLowerCase();
+        let nameB = b.name.last.toLowerCase();
+
+        if (nameA < nameB) {
+          return -1;
+        }
+        else if (nameA > nameB) {
+          return 1;
+        } else {
+          return 0;
+        }
+      })
+    })
+  }
 
   render() {
     return (
       <div className="container">
-        <button onClick={this.handleEmployeeSlice}>Slice</button>
+
+        <Header />
+
+        <button className="btn btn-danger mt-3" onClick={this.handleEmployeeSlice}>Slice</button>
+
+        <button className="btn btn-warning mt-3" onClick={this.handleEmployeeSort}>Sort</button>
 
         <SearchForm
           search={this.state.search}
