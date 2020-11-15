@@ -7,6 +7,18 @@ View a directory of employees, with the ability to search (filter) names or sort
 
 ## Screenshots
 
+Directory List:
+![Screenshot (149)](https://user-images.githubusercontent.com/62854999/99190878-3329e400-2737-11eb-88be-122824201891.png)
+
+Search Results:
+![Screenshot (151)](https://user-images.githubusercontent.com/62854999/99190947-974ca800-2737-11eb-940d-79468be08ab6.png)
+
+Last name sort alpha:
+![Screenshot (152)](https://user-images.githubusercontent.com/62854999/99190949-9a479880-2737-11eb-9450-c441e6f80722.png)
+
+First name sort alpha:
+![Screenshot (150)](https://user-images.githubusercontent.com/62854999/99190881-3624d480-2737-11eb-9ec9-6376657679c1.png)
+
 
 ## Table of Contents
 
