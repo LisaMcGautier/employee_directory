@@ -5,6 +5,9 @@ No license selected
 
 View a directory of employees, with the ability to search (filter) names or sort alphabetically.  
 
+## Deployed App
+https://lisamcgautier.github.io/employee_directory/
+
 ## Screenshots
 
 Directory List:
